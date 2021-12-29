@@ -5,10 +5,12 @@
 </head>
 
  <body>
-  <h1> Big heading </h1>
+  <h1 style="font-size:80px;"> Big heading </h1>
   <h4> Small heading </h4>
   <p>  ‘All the world’s a stage, and all the men and women merely players. They have their exits and their entrances; And one man in his time plays many parts.’
    <br> W.Shakespeare</p>
+   <p style="color:green;"> Google Link below:</p>
+   <a href="https://www.google.com">Visit Google</a>
  </body>
   
 </html>
