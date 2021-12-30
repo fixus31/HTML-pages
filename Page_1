@@ -5,9 +5,9 @@
 </head>
 
  <body>
-  <h1 style="font-size:80px;"> Big heading </h1>
+  <h1 style="font-size:80px; text-align:center"> Big heading </h1>
   <h4> Small heading </h4>
-  <p>  ‘All the world’s a stage, and all the men and women merely players. They have their exits and their entrances; And one man in his time plays many parts.’
+  <p style="font-size:180%">  ‘All the world’s a stage, and all the men and women merely players. They have their exits and their entrances; And one man in his time plays many parts.’
    <br> W.Shakespeare</p>
    <br>
    <hr>
