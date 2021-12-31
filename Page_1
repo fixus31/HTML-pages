@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang = "en-US">
 <head>
+<style>
+body {background-color: lightgray}
   <title> Page 1 </title>
+ </style>
 </head>
 
  <body>
