@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang = "en-US">
-
 <head>
   <title> Page 1 </title>
 </head>
@@ -8,17 +7,16 @@
  <body>
   <h1 style="font-size:80px; text-align:center"> Big heading </h1>
   <h4> Small heading </h4>
-  
   <p style="font-size:120%"> Here is a small quote of <i>famous</i> person: </p>
+  <!-- William Shakespeare's quote-->
   <blockquote cite="https://nosweatshakespeare.com/quotes/famous">
   ‘All the world’s <i>a stage</i>, and all the men and women merely <i>players</i>. They have their exits and their entrances; And one man in his time plays many parts.’
    </blockquote>
-   
    <br> <p><abbr title="William">W</abbr>. Shakespeare </p>
    <br>
+   <!-- Link to the Google page -->
    <p style="color:green;"> Google Link below:</p>
    <a href="https://www.google.com">Visit Google</a>
-   
    <hr>
    <p style="text-align:center"><small> © George Production. All rights reserved </small></p> 
  </body>
