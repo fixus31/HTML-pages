@@ -48,7 +48,16 @@ a:active {
    	
    <!-- Inserting the image -->
    <a href="HTML.asp">
-   <img src="william-shakespeare.jpg" alt="ws" style:"width:10px;height:10px"></a>
+   <img src="william-shakespeare.jpg" alt="ws" usemap="#section1" style="width:100px;height:100px;"></a>
+   
+   <map name = "section1">
+   	<area shape="circle" coords="50, 50, 50" onclick="tellMore()">
+   </map>
+   <!-- inserting JavaScript code into the image -->
+   <script>
+   const tellMore = () => alert("Famous English playwriter, the greatest dramatist in the world and great writer.");
+   </script>
+   
      <!-- Visit the website with 50 quotes of Shakespeare-->
    <p style="color:green">You may visit the site to see more Shakespeare's quotes:</p>
    
