@@ -7,6 +7,28 @@ blockquote {
 	font-family: verdana;
 	border: 1px solid blue;
 }
+a:link{
+	color:blue;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:visited {
+	color: orange;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration:underline;
+}
+
+a:active {
+	color: green;
+	background-color: transparent;
+	text-decoration: underline
+}
   <title> Page 1 </title>
  </style>
 </head>
@@ -21,9 +43,16 @@ blockquote {
    </blockquote>
    <br> <p><abbr title="William">W</abbr>. Shakespeare </p>
    <br>
-   <!-- Link to the Google page -->
-   <p style="color:green;"> Google Link below:</p>
-   <a href="https://www.google.com">Visit Google</a>
+   
+   	<button onclick="document.location='default.asp'">BUTTON</button>
+   	
+   <!-- Inserting the image -->
+   <a href="HTML.asp">
+   <img src="william-shakespeare.jpg" alt="ws" style:"width:10px;height:10px"></a>
+     <!-- Visit the website with 50 quotes of Shakespeare-->
+   <p style="color:green">You may visit the site to see more Shakespeare's quotes:</p>
+   
+   <a href="https://nosweatshakespeare.com/quotes/famous/" title="Go to Shakespeare's quotes website" target="_blank">Visit website</a>
    <hr>
    <p style="text-align:center"><small> © George Production. All rights reserved </small></p> 
  </body>
