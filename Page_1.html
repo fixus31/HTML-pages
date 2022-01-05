@@ -78,6 +78,13 @@ a:active {
  <!--Reference to the website header -->
   <h1 style="font-size:80px; text-align:center"> Big heading </h1>
   <h4> Small heading </h4>
+  <!-- Show eastern date and time -->
+  <h5> Date and time: </h5>
+  <button type="button" onclick="document.getElementById('timeShow').innerHTML = Date()">
+   Click here </button>
+   <p id="timeShow"></p>
+   <!-- Show eastern date and time -->
+   
   <p style="font-size:120%"> Here is a small quote of <i>famous</i> person: </p>
   <!-- William Shakespeare's quote-->
   <blockquote cite="https://nosweatshakespeare.com/quotes/famous">
@@ -85,9 +92,19 @@ a:active {
    </blockquote>
    <br> <p><abbr title="William">W</abbr>. Shakespeare </p>
    <br>
-   
-   	<button onclick="document.location='default.asp'">BUTTON</button>
-   	
+<!-- Script for hide the content -->   
+   	<button onclick="HideContent()">Hide Content</button>
+   	  <h2 class="interest"> Interesting facts: </h2>
+   	 <p class="interest"> Some moons around the planet of Uranus are named after characters from Shakespeare plays(for example, Ariel or Juliet).</p>
+   <script>
+	function HideContent() {
+		var x = document.getElementsByClassName("interest");
+		for(var i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+	}
+   </script>
+ <!-- Script for hide the content -->  	
    <!-- Inserting the image -->
    <a href="HTML.asp">
    <img src="william-shakespeare.jpg" alt="ws" usemap="#section1" style="width:100px;height:100px;"></a>
