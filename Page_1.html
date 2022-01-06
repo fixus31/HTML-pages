@@ -104,11 +104,50 @@ a:active {
 		}
 	}
    </script>
- <!-- Script for hide the content -->  	
-   <!-- Inserting the image -->
+   
+   <br>
+ <!-- Script for hide the content -->  
+ 	
+   <!-- Inserting the image  
    <a href="HTML.asp">
    <img src="william-shakespeare.jpg" alt="ws" usemap="#section1" style="width:100px;height:100px;"></a>
+   -->
    
+   <!-- switching between different pictures of W.Shakespeare -->
+   <script>
+   
+   function pictureSwitch(choice) {
+	
+	var picture;
+	if(choice == 0) {
+	
+		picture = "william-shakespeare.jpg"
+		
+	} else if(choice == 1) {
+	
+		picture = "shakes.jpg"
+		
+	} else {
+	
+		picture = "Shakespeare.jpg"
+	
+	}
+	document.getElementById("index").src = picture;
+	
+	}
+   
+   </script>
+   
+   <img id="index" src="william-shakespeare.jpg" style="width:100px;height:100px;">
+   
+   <p>
+   <button type="button" onclick="pictureSwitch(0)">Pic 1</button>
+   <button type="button" onclick="pictureSwitch(1)">Pic 2</button>
+   <button type="button" onclick="pictureSwitch(2)">Pic 3</button>
+   </p>
+   <!-- Inserting the script file to choose between multiple pictures -->
+   
+   <!-- Script below doesn't work because it overlaps with previous script. -->
    <map name = "section1">
    	<area shape="circle" coords="50, 50, 50" onclick="tellMore()">
    </map>
