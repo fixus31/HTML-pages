@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+  <title> Page 1 </title>
+  <!-- Website header style -->
+<style>
+ ul {
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 10px;
+ 	overflow: hidden;
+ 	background-color: #955559;
+ }
+ 
+ li {
+ 	float: left;
+ }
+ 
+ li a {
+ 	display: block;
+ 	color: white;
+ 	text-align: center;
+ 	padding: 10px;
+ 	text-decoration: none;
+ }
+ 
+ li a:hover {
+ 	background-color: #FFFFFF;
+ }
+</style>
+<!-- Website header style -->
+</head>
+<style>
+
+body {
+	background-image:url('background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+blockquote { 
+	font-family: verdana;
+	border: 1px solid blue;
+}
+a:link{
+	color:blue;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:visited {
+	color: orange;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration:underline;
+}
+
+a:active {
+	color: green;
+	background-color: transparent;
+	text-decoration: underline
+}
+
+ </style>
+
+
+ <body>
+ <!--Reference to the website header -->
+ <ul>
+ 	<li><a href="tables.htm" target="_blank">Countries</a></li>
+ 	<li><a href="contact.htm" target="_blank">Contact</a></li>
+ 	<li><a href="#about">About</a></li>
+ </ul>
+ <!--Reference to the website header -->
+  <h1 style="font-size:80px; text-align:center"> Big heading </h1>
+  <h4> Small heading </h4>
+  <!-- Show eastern date and time -->
+  <h5> Date and time: </h5>
+  <button type="button" onclick="document.getElementById('timeShow').innerHTML = Date()">
+   Click here </button>
+   <p id="timeShow"></p>
+   <!-- Show eastern date and time -->
+   
+  <p style="font-size:120%"> Here is a small quote of <i>famous</i> person: </p>
+  <!-- William Shakespeare's quote-->
+  <blockquote cite="https://nosweatshakespeare.com/quotes/famous">
+  ‘All the world’s <i>a stage</i>, and all the men and women merely <i>players</i>. They have their exits and their entrances; And one man in his time plays many parts.’
+   </blockquote>
+   <br> <p><abbr title="William">W</abbr>. Shakespeare </p>
+   <br>
+<!-- Script for hide the content -->   
+   	<button onclick="HideContent()">Hide Content</button>
+   	  <h2 class="interest"> Interesting facts: </h2>
+   	 <p class="interest"> Some moons around the planet of Uranus are named after characters from Shakespeare plays(for example, Ariel or Juliet).</p>
+   <script>
+	function HideContent() {
+		var x = document.getElementsByClassName("interest");
+		for(var i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+	}
+   </script>
+   
+   <br>
+ <!-- Script for hide the content -->  
+ 	
+   <!-- Inserting the image  
+   <a href="HTML.asp">
+   <img src="william-shakespeare.jpg" alt="ws" usemap="#section1" style="width:100px;height:100px;"></a>
+   -->
+   
+   <!-- switching between different pictures of W.Shakespeare -->
+   <script>
+   
+   function pictureSwitch(choice) {
+	
+	var picture;
+	if(choice == 0) {
+	
+		picture = "william-shakespeare.jpg"
+		
+	} else if(choice == 1) {
+	
+		picture = "shakes.jpg"
+		
+	} else {
+	
+		picture = "Shakespeare.jpg"
+	
+	}
+	document.getElementById("index").src = picture;
+	
+	}
+   
+   </script>
+   
+   <img id="index" src="william-shakespeare.jpg" style="width:100px;height:100px;">
+   
+   <p>
+   <button type="button" onclick="pictureSwitch(0)">Pic 1</button>
+   <button type="button" onclick="pictureSwitch(1)">Pic 2</button>
+   <button type="button" onclick="pictureSwitch(2)">Pic 3</button>
+   </p>
+   <!-- Inserting the script file to choose between multiple pictures -->
+   
+   <!-- Script below doesn't work because it overlaps with previous script. -->
+   <map name = "section1">
+   	<area shape="circle" coords="50, 50, 50" onclick="tellMore()">
+   </map>
+   <!-- inserting JavaScript code into the image -->
+   <script>
+   const tellMore = () => alert("Famous English playwriter, the greatest dramatist in the world and great writer.");
+   </script>
+   
+     <!-- Visit the website with 50 quotes of Shakespeare-->
+   <p style="color:green">You may visit the site to see more Shakespeare's quotes:</p>
+   
+   <a href="https://nosweatshakespeare.com/quotes/famous/" title="Go to Shakespeare's quotes website" target="_blank">Visit website</a>
+   <hr>
+   <p style="text-align:center"><small> © George Production. All rights reserved </small></p> 
+ </body>
+  
+</html>
